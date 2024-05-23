@@ -5,7 +5,7 @@ html {
 }
 
 h1 {
-    color: #AD5A2A;
+    color: #a15f39;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-style: italic;
@@ -39,6 +39,7 @@ p {
     text-align: left;
     font-size: 4rem;
 }
+
 ul {
     list-style-type: none;
     font-size: 5rem;
@@ -46,7 +47,7 @@ ul {
 
 header {
     background-color: #929C2C;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 header section {
@@ -55,20 +56,20 @@ header section {
 }
 
 header section img {
-    width: 400px; 
+    width:  25rem; 
     height: auto; 
-    margin-right: 30px;
+    margin-right: 0px;
 }
 
 .image-container {
     position: relative;
     display: inline-block;
-    margin-right: 500px;
+    margin-right: 12.5rem;
 }
 
 #luis img,
 #daniel img {
-    width: 500px;
+    width: 31.25rem;;
     height: auto;
 }
 
@@ -100,7 +101,7 @@ main {
 
 main section {
     flex: 1 1 50%;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 main section img {
@@ -109,20 +110,20 @@ main section img {
 }
 
 section {
-    margin: 20px;
-    padding: 20px;
+    margin: 1.25rem;
+    padding: 1.25rem;
     background-color: #929C2C;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 h3 {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 form {
     font-size: 2.5rem;
     display: grid;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 label {
@@ -134,15 +135,377 @@ input[type="email"],
 input[type="tel"],
 textarea {
     width: 100%;
-    padding: 8px;
+    padding: 0.5rem;;
     border: 1px solid  #929C2C;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     box-sizing: border-box;
 }
 
 input[type="submit"] {
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.galeria {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1%;
+}
+
+.galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.625rem;
+}
+
+.galeria-img-uno {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.galeria-img-dos {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.galeria-img-tres {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.galeria-img-cuatro {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.galeria-img-cinco {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.galeria-img-seis {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+
+footer {
+    background-color: #5D8230;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+footer section {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    background-color: #5D8230;
+}
+
+footer svg {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+footer section p {
+    color: #070706;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: left;
+    font-size: 3rem;
+}
+
+
+/* USO DE GRIDS EN INDEX */
+.grid-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 1.25rem; 
+}
+
+.basura, .trono{
+    border-radius: 0.625rem;
+    overflow: hidden; 
+}
+
+.basura img, .trono img {
+    width: 75%; 
+    height: auto; 
+}
+
+.basura, .trono {
+    text-align: center;
+}
+
+/* USO DE GRIDS EN RECICLAJE */
+.grid-reciclaje {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 1.25rem; 
+}
+
+.video-reciclaje {
+    grid-column: 1 / -1; 
+    grid-row: 1 / 2;
+}
+
+.texto-reciclaje {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+/* USO DE GRIDS EN NUESTROS MUEBLES */
+.grid-muebles {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.25rem;
+}
+
+.texto-muebles {
+    grid-column: 1 / -1; 
+}
+
+
+/* NOSOTROS */
+.grid-nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+}
+
+#luis,
+#daniel {
+    text-align: center;
+}
+
+
+
+/*  USO DE MEDIAQUERY EN NOSOTROS.HTML */
+
+/* Mobile NOSOTROS.HTML */
+@media screen and (max-width: 320px) and (max-width: 767px) {
+    header {
+        text-align: center;
+        /* color: #a15f39;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        font-size: 3rem;  */
+    }
+
+    header section h1 {
+        color: #a15f39;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        font-size: 3rem; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #luis, #daniel {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer section {
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+/* tablet NOSOTROS.HTML */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        text-align: center;
+        color: #a15f39;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        font-size: 3rem; 
+    }
+
+    /* header h1 {
+        color: #a15f39;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        font-size: 3rem; 
+    } */
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #luis, #daniel {
+        font-size: 1.1rem;
+        margin: 1rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer section {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* desktop NOSOTROS.HTML */
+@media screen and (min-width: 1024px) {
+    .grid-nosotros {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.25rem;
+    }
+    
+    #luis,
+    #daniel {
+        text-align: center;
+    }
+    
+}
+
+
+/*  USO DE MEDIAQUERY EN CONTACTO.HTML*/
+
+/* mobile CONTACTO.HTML */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form label,
+    form input,
+    form textarea,
+    form input[type="submit"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background-color: #5D8230;
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* tablet CONTACTO.HTML */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header h1 {
+        font-size: 1.2rem; 
+    }
+
+    nav ul {
+        flex-direction: row; 
+        align-items: unset; 
+    }
+
+    form label,
+    form input,
+    form textarea,
+    form input[type="submit"] {
+        margin-bottom: 5px; 
+    }
+
+    footer p {
+        font-size: 0.7rem; 
+    }
+}
+
+/* desktop CONTACTO.HTML */
+h3 {
+    margin-bottom: 0.625rem;
+}
+
+form {
+    font-size: 2.5rem;
+    display: grid;
+    gap: 0.625rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;;
+    border: 1px solid  #929C2C;
+    border-radius: 0.3125rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.625rem;
     border: none;
     border-radius: 5px;
     background-color: #007bff;
@@ -160,27 +523,37 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 footer section {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     background-color: #5D8230;
 }
 
-footer svg {
-    width: 50px;
-    height: 50px;
-}
 
-footer section p {
-    color: #070706;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    text-align: left;
-    font-size: 3rem;
-}
 
+
+/* borrar lo de abajo */
+/* areaa
+areaa */
+/* areaa
+areaa
+a
+a */
+/* a
+a
+a */
+
+/* areaa
+areaa
+areaa
+areaa
+areaa */
+/* areaa
+areaa
+a
+a
+a
